@@ -254,6 +254,7 @@
 				TargetAttributes = {
 					B82E7EB41FC92C0B00BC64AB = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 29X3FG4322;
 						ProvisioningStyle = Automatic;
 					};
 					B82E7ECB1FC92C0B00BC64AB = {
@@ -480,6 +481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 29X3FG4322;
 				INFOPLIST_FILE = ChatingApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -493,6 +495,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 29X3FG4322;
 				INFOPLIST_FILE = ChatingApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

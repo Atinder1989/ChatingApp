@@ -31,15 +31,11 @@ class ChatViewController: UIViewController {
         }
         chatViewModel.updateChat = {
             DispatchQueue.main.async {
-                self.chatTableView.reloadData()
                 self.reloadChatTableView()
             }
         }
     }
-    override func viewDidLayoutSubviews() {
-        //print("frame y = \(self.messageView.frame.origin.y)")
-       // print("view height y = \(self.view.frame.height)")
-    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -70,8 +66,6 @@ extension ChatViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var chatModel = self.chatViewModel.chatData[indexPath.row] as Chat
-       //  let size:CGSize = self.getHeight(chatModel.message)
-        
         if chatModel.userType == .receiver {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ReceiverCell", for: indexPath) as! ReceiverCell
             cell.selectionStyle = .none
